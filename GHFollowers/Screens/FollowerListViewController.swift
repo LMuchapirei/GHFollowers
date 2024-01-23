@@ -56,7 +56,8 @@ class FollowerListViewController: UIViewController {
         return flowLayout
     }
     func getFollowers(){
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+        NetworkManager.shared.getFollowers(for: username, page: 1) {[weak self] result in
+            guard let self = self else { return } /// Force unwrap the optional
             switch result {
             case .success(let followers):
                 print("Followers.count = \(followers.count)")
