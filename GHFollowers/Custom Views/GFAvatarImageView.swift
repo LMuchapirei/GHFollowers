@@ -8,6 +8,7 @@
 import UIKit
 
 class GFAvatarImageView: UIImageView {
+    let cache = NetworkManager.shared.cache
     let placeholderImage = UIImage(named: "avatar-placeholder")!
     override init(frame:CGRect){
         super.init(frame: frame)
@@ -26,6 +27,15 @@ class GFAvatarImageView: UIImageView {
     }
     
     func downloadImage(from urlString: String){
+        /// Code to download image and display it in an image view
+        let cacheKey = NSString(string: urlString)
+        /// Imrpove performance by loading image from cache
+        if let image  = cache.object(forKey: cacheKey){
+            self.image = image
+            print("from cache")
+            return
+        }
+            
         guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url) {[weak self] data,response,error in
             guard let self = self else { return }
@@ -33,8 +43,12 @@ class GFAvatarImageView: UIImageView {
             guard let response = response as? HTTPURLResponse,response.statusCode == 200  else { return }
             guard let data = data else { return }
             guard let image = UIImage(data: data) else { return }
+            /// Update entry into cache and fetch it later without making a network call
+            cache.setObject(image, forKey: cacheKey)
             DispatchQueue.main.async {
+                print("from netwrok")
                 self.image = image
+               
             }
         }
         task.resume()

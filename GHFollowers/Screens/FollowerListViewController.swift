@@ -79,6 +79,4 @@ class FollowerListViewController: UIViewController {
             self.dataSource.apply(snapshot,animatingDifferences: true)
         }
     }
-    
-
 }
