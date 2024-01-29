@@ -28,6 +28,7 @@
 		87DFA1962B5E5C0900657314 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFA1952B5E5C0900657314 /* ErrorMessages.swift */; };
 		87DFA1992B5E649D00657314 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFA1982B5E649D00657314 /* FollowerCell.swift */; };
 		87DFA19B2B5E65B600657314 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFA19A2B5E65B600657314 /* GFAvatarImageView.swift */; };
+		87F483A72B63C817001CC3A3 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F483A62B63C817001CC3A3 /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		87DFA1952B5E5C0900657314 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		87DFA1982B5E649D00657314 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		87DFA19A2B5E65B600657314 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		87F483A62B63C817001CC3A3 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +116,13 @@
 		87DFA1822B591B0700657314 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				87F483A52B63C7E0001CC3A3 /* Labels */,
+				87F483A42B63C7A5001CC3A3 /* ViewControllers */,
+				87F483A32B63C78F001CC3A3 /* TextFields */,
+				87F483A22B63C785001CC3A3 /* ImageViews */,
+				87F483A12B63C772001CC3A3 /* Buttons */,
+				87F483A02B63C76B001CC3A3 /* Views */,
 				87DFA1972B5E647300657314 /* Cells */,
-				87DFA17D2B59125100657314 /* GFAlertViewController.swift */,
-				87DFA1792B590FEA00657314 /* GFTitleLabel.swift */,
-				87DFA17B2B5911AC00657314 /* GFBodyLabel.swift */,
-				87DFA1752B57B5CE00657314 /* GFTextField.swift */,
-				87DFA1732B56C33600657314 /* GFButton.swift */,
-				87DFA19A2B5E65B600657314 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -166,6 +168,55 @@
 				87DFA1982B5E649D00657314 /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		87F483A02B63C76B001CC3A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87F483A62B63C817001CC3A3 /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87F483A12B63C772001CC3A3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				87DFA1732B56C33600657314 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		87F483A22B63C785001CC3A3 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				87DFA19A2B5E65B600657314 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		87F483A32B63C78F001CC3A3 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				87DFA1752B57B5CE00657314 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		87F483A42B63C7A5001CC3A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				87DFA17D2B59125100657314 /* GFAlertViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		87F483A52B63C7E0001CC3A3 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				87DFA1792B590FEA00657314 /* GFTitleLabel.swift */,
+				87DFA17B2B5911AC00657314 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +294,7 @@
 				87DFA1722B56BDF200657314 /* FavoriteListViewController.swift in Sources */,
 				87DFA1742B56C33600657314 /* GFButton.swift in Sources */,
 				87DFA1802B59186F00657314 /* UIViewController+Ext.swift in Sources */,
+				87F483A72B63C817001CC3A3 /* GFEmptyStateView.swift in Sources */,
 				87DFA1852B591B8400657314 /* String+Extensions.swift in Sources */,
 				87DFA17E2B59125100657314 /* GFAlertViewController.swift in Sources */,
 				87DFA1992B5E649D00657314 /* FollowerCell.swift in Sources */,
