@@ -8,7 +8,11 @@
 import UIKit
 
 class UserInfoViewController: UIViewController {
+    
+    let headerView = UIView()
+    
     var username: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -27,6 +31,21 @@ class UserInfoViewController: UIViewController {
                 break
             }
         }
+        layoutUI()
+    }
+    
+    func layoutUI(){
+        view.addSubview(headerView)
+        
+        headerView.backgroundColor = .systemRed
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 20),
+            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -20),
+            headerView.heightAnchor.constraint(equalToConstant: 180)
+        ])
     }
     
     @objc func dismissVC(){
