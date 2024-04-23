@@ -45,7 +45,7 @@ class GFEmptyStateView: UIView {
             logoImageView.widthAnchor.constraint(equalTo: self.widthAnchor,multiplier: 1.3),   /// ie set it up to be 30 percent larger than the width of the screen
             logoImageView.heightAnchor.constraint(equalTo: self.widthAnchor,multiplier: 1.3),
             logoImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 170),
-            logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: 40)
+            logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: 140)
          ])
     }
     

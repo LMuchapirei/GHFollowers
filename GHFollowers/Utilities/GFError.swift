@@ -1,8 +1,8 @@
 //
-//  ErrorMessages.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Linval Muchapirei on 22/1/2024.
+//  Created by Linval Muchapirei on 29/1/2024.
 //
 
 import Foundation
