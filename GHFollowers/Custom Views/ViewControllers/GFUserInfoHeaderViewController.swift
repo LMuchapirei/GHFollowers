@@ -31,6 +31,7 @@ class GFUserInfoHeaderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubViews()
+        layoutUI()
     }
     
     func addSubViews(){
@@ -42,5 +43,13 @@ class GFUserInfoHeaderViewController: UIViewController {
         view.addSubview(bioLabel)
     }
     
-    
+    func layoutUI(){
+        let padding: CGFloat = 20
+        let textImagePadding: CGFloat = 12
+        locationImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            
+        ])
+    }
 }
