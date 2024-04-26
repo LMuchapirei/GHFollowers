@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8708EA6A2BDBB15200D59136 /* GFItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */; };
 		871AA7522BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */; };
 		871AA7542BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7532BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift */; };
 		871AA7562BD7FAD000E9E4FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7552BD7FAD000E9E4FD /* Constants.swift */; };
+		871AA75D2BDA578F00E9E4FD /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA75C2BDA578F00E9E4FD /* GFItemInfoView.swift */; };
 		87AAA6372B5FCACF00AA0CCA /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AAA6362B5FCACF00AA0CCA /* UIHelper.swift */; };
 		87DFA15C2B56B75C00657314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFA15B2B56B75C00657314 /* AppDelegate.swift */; };
 		87DFA15E2B56B75C00657314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFA15D2B56B75C00657314 /* SceneDelegate.swift */; };
@@ -36,9 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoViewController.swift; sourceTree = "<group>"; };
 		871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		871AA7532BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		871AA7552BD7FAD000E9E4FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		871AA75C2BDA578F00E9E4FD /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		87AAA6362B5FCACF00AA0CCA /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		87DFA1582B56B75C00657314 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DFA15B2B56B75C00657314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				87F483A62B63C817001CC3A3 /* GFEmptyStateView.swift */,
+				871AA75C2BDA578F00E9E4FD /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			children = (
 				87DFA17D2B59125100657314 /* GFAlertViewController.swift */,
 				871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */,
+				8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -321,8 +327,10 @@
 				87DFA1702B56BDBC00657314 /* SearchViewController.swift in Sources */,
 				87AAA6372B5FCACF00AA0CCA /* UIHelper.swift in Sources */,
 				87DFA1932B5E48D400657314 /* NetworkManager.swift in Sources */,
+				8708EA6A2BDBB15200D59136 /* GFItemInfoViewController.swift in Sources */,
 				87DFA15C2B56B75C00657314 /* AppDelegate.swift in Sources */,
 				87DFA15E2B56B75C00657314 /* SceneDelegate.swift in Sources */,
+				871AA75D2BDA578F00E9E4FD /* GFItemInfoView.swift in Sources */,
 				871AA7522BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift in Sources */,
 				871AA7562BD7FAD000E9E4FD /* Constants.swift in Sources */,
 			);
