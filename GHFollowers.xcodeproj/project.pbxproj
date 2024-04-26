@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8708EA6A2BDBB15200D59136 /* GFItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */; };
+		8708EA6C2BDBB57600D59136 /* GFRepoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8708EA6B2BDBB57600D59136 /* GFRepoItemViewController.swift */; };
+		8708EA6E2BDBB7DD00D59136 /* GFFollowerItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8708EA6D2BDBB7DD00D59136 /* GFFollowerItemViewController.swift */; };
 		871AA7522BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */; };
 		871AA7542BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7532BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift */; };
 		871AA7562BD7FAD000E9E4FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871AA7552BD7FAD000E9E4FD /* Constants.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoViewController.swift; sourceTree = "<group>"; };
+		8708EA6B2BDBB57600D59136 /* GFRepoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemViewController.swift; sourceTree = "<group>"; };
+		8708EA6D2BDBB7DD00D59136 /* GFFollowerItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemViewController.swift; sourceTree = "<group>"; };
 		871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		871AA7532BD7EF4D00E9E4FD /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		871AA7552BD7FAD000E9E4FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -81,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8708EA6F2BDBB88000D59136 /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */,
+				8708EA6B2BDBB57600D59136 /* GFRepoItemViewController.swift */,
+				8708EA6D2BDBB7DD00D59136 /* GFFollowerItemViewController.swift */,
+			);
+			path = ItemInfoVCs;
+			sourceTree = "<group>";
+		};
 		87DFA14F2B56B75C00657314 = {
 			isa = PBXGroup;
 			children = (
@@ -220,9 +234,9 @@
 		87F483A42B63C7A5001CC3A3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8708EA6F2BDBB88000D59136 /* ItemInfoVCs */,
 				87DFA17D2B59125100657314 /* GFAlertViewController.swift */,
 				871AA7512BD7EE0D00E9E4FD /* GFUserInfoHeaderViewController.swift */,
-				8708EA692BDBB15200D59136 /* GFItemInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +323,7 @@
 			files = (
 				87F483A92B67B3A3001CC3A3 /* UserInfoViewController.swift in Sources */,
 				87DFA1762B57B5CE00657314 /* GFTextField.swift in Sources */,
+				8708EA6E2BDBB7DD00D59136 /* GFFollowerItemViewController.swift in Sources */,
 				87DFA1722B56BDF200657314 /* FavoriteListViewController.swift in Sources */,
 				87DFA1742B56C33600657314 /* GFButton.swift in Sources */,
 				87DFA1802B59186F00657314 /* UIViewController+Ext.swift in Sources */,
@@ -319,6 +334,7 @@
 				87F483AB2B67BDD6001CC3A3 /* GFError.swift in Sources */,
 				87DFA1992B5E649D00657314 /* FollowerCell.swift in Sources */,
 				87DFA19B2B5E65B600657314 /* GFAvatarImageView.swift in Sources */,
+				8708EA6C2BDBB57600D59136 /* GFRepoItemViewController.swift in Sources */,
 				87DFA18A2B59261000657314 /* User.swift in Sources */,
 				87DFA1782B57CCC800657314 /* FollowerListViewController.swift in Sources */,
 				87DFA1882B59255100657314 /* Follower.swift in Sources */,
