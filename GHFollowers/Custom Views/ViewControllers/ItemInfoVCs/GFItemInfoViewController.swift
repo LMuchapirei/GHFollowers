@@ -20,6 +20,7 @@ class GFItemInfoViewController: UIViewController {
         configureBackgroundView()
         layoutUI()
         configureStackView()
+        configureActionButton()
     }
     
     init(user: User) {
@@ -48,6 +49,13 @@ class GFItemInfoViewController: UIViewController {
         
     }
     
+    private func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func actionButtonTapped() {
+        
+    }
     private func layoutUI(){
         view.addSubview(stackView)
         view.addSubview(actionButton)

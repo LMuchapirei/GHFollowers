@@ -109,11 +109,13 @@ class UserInfoViewController: UIViewController {
 extension UserInfoViewController: UserInfoViewControllerDelegate {
     func didTapGitHubProfile() {
         ////  Show safari view controller
+        print("My button was tapped !!!")
     }
     
     func didTapGetFollowers() {
         /// dismiss vs
         /// tell follower list screen the new user
+        print("My button was tapped !!! Getting followers")
     }
     
     
