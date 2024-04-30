@@ -131,6 +131,7 @@ extension FollowerListViewController: UICollectionViewDelegate {
         let follower = activeArray[indexPath.item]
         let destinationViewController = UserInfoViewController()
         destinationViewController.username = follower.login
+        destinationViewController.delegate = self
         let navController = UINavigationController(rootViewController: destinationViewController)
         present(navController, animated: true)
     }
@@ -156,6 +157,14 @@ extension FollowerListViewController:UISearchResultsUpdating, UISearchBarDelegat
 extension FollowerListViewController: FollowerListViewControllerDelegate {
     func didRequestFollowers(for username: String) {
         //// get followers for that user
+        self.username = username
+        title = username
+        page = 1
+        followers.removeAll()
+        filteredFollowers.removeAll()
+        collectionView.setContentOffset(.zero, animated: true)
+        getFollowers(userName: username, page: page)
+        
     }
     
     
