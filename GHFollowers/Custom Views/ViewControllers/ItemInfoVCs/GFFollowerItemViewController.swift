@@ -20,7 +20,7 @@ class GFFollowerItemViewController: GFItemInfoViewController {
     }
     
     override func actionButtonTapped() {
-        delegate.didTapGetFollowers()
+        delegate.didTapGetFollowers(for: user)
     }
     
 }
