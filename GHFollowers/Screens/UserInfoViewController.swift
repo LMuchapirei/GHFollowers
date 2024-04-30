@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SafariServices
 
 protocol UserInfoViewControllerDelegate: AnyObject {
     func didTapGitHubProfile(for  user: User)
@@ -115,10 +114,7 @@ extension UserInfoViewController: UserInfoViewControllerDelegate {
             presentGFAlertOnMainThread(title: "Invalid Url", message: "The url attached to this user is invalid", buttonTitle: "OK")
             return
         }
-        
-        let safariVC = SFSafariViewController(url: url)
-        safariVC.preferredControlTintColor = .systemGreen
-        present(safariVC,animated: true)
+        presentSafariVC(with: url)
     }
     
     func didTapGetFollowers(for user: User) {

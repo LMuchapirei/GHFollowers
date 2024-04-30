@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FollowerListViewControllerDelegate : AnyObject {
+    func didRequestFollowers(for username: String)
+}
+
 class FollowerListViewController: UIViewController {
     
     enum Section {
@@ -147,4 +151,12 @@ extension FollowerListViewController:UISearchResultsUpdating, UISearchBarDelegat
         updateData(on: followers)
         isSearching = false
     }
+}
+
+extension FollowerListViewController: FollowerListViewControllerDelegate {
+    func didRequestFollowers(for username: String) {
+        //// get followers for that user
+    }
+    
+    
 }
