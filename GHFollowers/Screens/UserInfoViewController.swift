@@ -111,7 +111,6 @@ class UserInfoViewController: UIViewController {
 extension UserInfoViewController: UserInfoViewControllerDelegate {
     func didTapGitHubProfile(for user: User) {
         ////  Show safari view controller
-        print("My button was tapped !!!")
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid Url", message: "The url attached to this user is invalid", buttonTitle: "OK")
             return
