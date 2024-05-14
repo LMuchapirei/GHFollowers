@@ -29,13 +29,14 @@ class SearchViewController: UIViewController {
     /// check if this one is necessary otherwise skip it
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        userNameTextField.text = ""
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func configureLogoImageView(){
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = UIImage(named: "gh-logo")!
+        logoImageView.image = Images.ghLogo
         let topConstraintConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 20 : 80
         logoImageViewTopConstraint = logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: topConstraintConstant)
         logoImageViewTopConstraint.isActive = true
@@ -48,7 +49,7 @@ class SearchViewController: UIViewController {
     }
     
     private func createDismissKeyboardTapGesture(){
-        let tap = UITapGestureRecognizer(target:self.view,action:#selector(UIView.endEditing(_:)))
+        let tap = UITapGestureRecognizer(target:view,action:#selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
     }
     
@@ -57,9 +58,8 @@ class SearchViewController: UIViewController {
             presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username.We need to know who to look for 😁", buttonTitle: "OK")
             return
             }
-        let followerListVC = FollowerListViewController()
-        followerListVC.username = userNameTextField.text
-        followerListVC.title = userNameTextField.text
+        userNameTextField.resignFirstResponder()
+        let followerListVC = FollowerListViewController(username: userNameTextField.text)
         navigationController?.pushViewController(followerListVC, animated: true)
     }
     
